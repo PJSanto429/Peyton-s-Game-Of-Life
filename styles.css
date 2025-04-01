@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 3px solid rgb(94, 24, 24);
+}
+
+td {
+    height: 10px;
+    border: 2px solid black;
+    background-color: rgb(136, 136, 136);
+    border-radius: 25%;
+}
+
+button {
+    background-color: #8B0000; /* Dark red background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+}

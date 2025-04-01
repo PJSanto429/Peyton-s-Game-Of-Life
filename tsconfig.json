@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "rootDir": "./src",  // source files are inside src/
+      "outDir": "./dist",  // compiled files will go into dist/
+      "module": "ES6", 
+      "target": "ES6", 
+      "moduleResolution": "node",
+      "strict": true
+    },
+    "include": [
+      "src/**/*.ts"  // Include all .ts files inside src/
+    ]
+}
+  
