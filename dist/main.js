@@ -132,7 +132,6 @@ const setupGame = () => {
         });
     });
     body.appendChild(playPauseButton);
-    body.appendChild(resetButton);
     return cells;
 };
 function runGame(time, game) {
@@ -140,13 +139,6 @@ function runGame(time, game) {
         game();
     }, time);
 }
-const resetButton = document.createElement('button');
-resetButton.innerText = 'Reset Simulation';
-resetButton.addEventListener('click', function () {
-    cells = cells.map((c) => {
-        return Object.assign(Object.assign({}, c), { isAlive: false, aliveNextRound: false });
-    });
-});
 const playPauseButton = document.createElement('button');
 playPauseButton.textContent = 'Play Simulation';
 playPauseButton.addEventListener('click', function () {
@@ -201,4 +193,4 @@ const mainGameLoop = () => {
      *?      2.2 Set color to white(alive) or black(dead)
      */
 };
-runGame(25, mainGameLoop);
+runGame(100, mainGameLoop);
